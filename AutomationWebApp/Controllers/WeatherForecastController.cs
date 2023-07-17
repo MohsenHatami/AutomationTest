@@ -29,5 +29,12 @@ namespace AutomationWebApp.Controllers
             })
             .ToArray();
         }
+
+        
+        [HttpGet("hello")]
+        public string SayHello()
+        {
+            return $"hello there {Guid.NewGuid().ToString("N")}"; 
+        }
     }
 }
